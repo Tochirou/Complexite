@@ -6,6 +6,7 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
+import vue.FenetrePrincipale;
 import model.Box;
 import model.Obj;
 
@@ -197,6 +198,7 @@ public class BinPacking {
         }
         this.firstFit();
         System.out.println(this);
+        FenetrePrincipale fen = new FenetrePrincipale(packing);
     }
 
     /**

@@ -82,6 +82,8 @@ public class Box {
         fillingRatio=Math.round((1.0-(double)left/(width*height))*100);
     }
 
-
+    public int[][] getContent() {
+    	return content;
+    }
 
 }
