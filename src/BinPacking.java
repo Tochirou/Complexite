@@ -6,6 +6,9 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
+import model.Box;
+import model.Obj;
+
 /**
  * Created by Tom Veniat on 31/12/14.
  */
@@ -202,6 +205,10 @@ public class BinPacking {
     private void reinit() {
         this.packing=new ArrayList<Box>();
         this.packing.add(new Box(boxesWidth, boxesHeight));
+    }
+    
+    public List<Box> getBox() {
+    	return packing;
     }
 
     /**
