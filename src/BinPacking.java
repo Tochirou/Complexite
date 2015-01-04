@@ -92,7 +92,6 @@ public class BinPacking {
 				packing.get(packing.size()-1).fit(o);
 			}
 		}
-		System.out.println(this);
 		return packing.size();
 	}
 
@@ -149,18 +148,6 @@ public class BinPacking {
 			else test2.add(o);
 		}
 		
-		for (Obj o:sortedObjects) {
-			System.out.println("liste: "+o);
-		}
-		for (Obj o:test) {
-			System.out.println("liste1: "+o);
-		}
-		for (Obj o:test2) {
-			System.out.println("liste2: "+o);
-		}
-		System.out.println("size1 "+test.size());
-		System.out.println("size2 "+test2.size());
-		
 		sortedObjects.clear();
 		while (!test.isEmpty() || !test2.isEmpty()) {
 			if (!test2.isEmpty()) {
@@ -174,11 +161,6 @@ public class BinPacking {
 		
 		Obj min = sortedObjects.remove(sortedObjects.size()-1);
 		sortedObjects.add(sortedObjects.size()/2, min);
-		
-		
-		for (Obj o:sortedObjects) {
-			System.out.println("liste: "+o);
-		}
 
 	}
 
