@@ -233,7 +233,7 @@ public class BinPacking {
 		}
 		this.firstFit();
 		System.out.println(this);
-		FenetrePrincipale fen = new FenetrePrincipale(packing);
+		FenetrePrincipale fen = new FenetrePrincipale(packing,number);
 	}
 
 	/**

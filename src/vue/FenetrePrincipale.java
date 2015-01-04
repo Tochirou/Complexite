@@ -12,12 +12,12 @@ import model.Box;
 
 public class FenetrePrincipale extends JFrame{
 
-	public FenetrePrincipale(List<Box> boxes) {
+	public FenetrePrincipale(List<Box> boxes, int nbbox) {
 		setLayout(new BorderLayout());
 		
 		setSize(1500, 800);
 		
-		JLabel lab = new JLabel("Best solution: ");
+		JLabel lab = new JLabel("Best solution with "+nbbox+" boxe(s)");
 		
 		add(lab,BorderLayout.NORTH);
 		
