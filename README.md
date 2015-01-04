@@ -1,4 +1,0 @@
-Complexite
-==========
-
-Projet complexité
